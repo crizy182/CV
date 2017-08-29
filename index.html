@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Ronaldo Mata - Desarrolador Web</title>
+</head>
+<body> 
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Ronaldo Mata</a>
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse nav-options" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a class="options" href="#">Sobre mi</a></li>
+                        <li><a class="options" href="#portfolio">Portafolio</a></li>
+                        <li><a class="options" href="#skills">Habilidades</a></li>
+                        <li><a class="options" href="#experience">Experiencia</a></li>
+                        <li><a class="options" href="#contact">Contacto</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container"> <!--section all the content go to inside here!! -->
+        <div class="row"> <!-- first section of page. here are all about me-->
+
+            <div class="col-xs-12 col-md-8 col-lg-8 text-me">
+                <p> Front-End Developer and UX/UI designer, with practical experience in project management, branding strategy, and creative direction; devoted to functional programming and information architecture.</p>
+                <hr/>
+                <p>
+                    <strong>Web Developer - User Experience Designer - Graphic Artist</strong> 
+                </p> 
+            </div>
+                  
+            <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0 col-lg-4 img-me">
+                <img id="" src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/15317986_749812818507439_7162186148487319816_n.jpg?oh=8abaaa0ade73db5b687fb85458f6293e&oe=59DA48CA" alt="my picture" class="img-responsive img-circle">
+                <br>
+            </div>
+
+        </div>
+
+        <!-- Portfolio Section -->
+        <div class="row" id="portfolio">
+            <div class="col-xs-12"><h3>Portafolio</h3></div>
+            <div class="col-xs-12 col-sm-6"><img class="img-thumbnail" src="static/img/background.jpg" alt=""></div>
+            <div class="col-xs-12 col-sm-6"><img class="img-thumbnail" src="static/img/background.jpg" alt=""></div>
+            <div class="col-xs-12 col-sm-6"><img class="img-thumbnail" src="static/img/background.jpg" alt=""></div>
+        </div>
+
+        <!--section skills -->
+        <div class="row" id="skills">
+
+            <div class="col-xs-12"><h3>Habilidades</h3></div>
+
+            <!-- skills bars -->
+            <div class="col-sm-6 col-lg-6">
+                <p>HTML</p>
+                <div class="skill-code">
+                <div class="skills html">90%</div>
+                </div>
+                
+                <p>CSS</p>
+                <div class="skill-code">
+                <div class="skills css">80%</div>
+                </div>
+                
+                <p>JavaScript</p>
+                <div class="skill-code">
+                <div class="skills js">65%</div>
+                </div>
+                
+                <p>PHP</p>
+                <div class="skill-code">
+                <div class="skills php">60%</div>
+                </div>
+            </div>
+
+            <!-- aditional information about skills -->
+            <div class="col-sm-6 col-lg-6">
+                <p>Actualmente sigo mejorando mis habilidades explorando la web, actualmente soy alumno activo en Platzi.com, plataforma a la cual le agradezco mucho</p>
+            </div>
+
+        </div>
+
+        <!--section experience -->
+        <div class="row" id="experience">
+                <div class="col-xs-12"><h3>Experiencia</h3></div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="row" id="contact">
+            <div class="col-xs-12"><h3>Contacto</h3></div>
+
+            <div class="col-xs-12 col-sm-6">
+                <form class="w3-container" method="post">  
+                    <label for="name">Nombre:</label>
+                    <input id="name" class="w3-input" placeholder="Name" type="text">
+
+                    <label for="email">Email:</label>
+                    <input id="email" class="w3-input" placeholder="Email" type="text">
+
+                    <label for="phone">Telefono:</label>
+                    <input id="phone" class="w3-input" placeholder="Telefono" type="text">
+
+                    <label for="message">Cuentame:</label>
+                    <textarea id="message" class="w3-input" placeholder="Cuentame" type="text"></textarea>
+
+                    <button type="submit" class="btn btn-default btn-success">Enviar</button>
+                </form>
+            </div>
+
+            <!-- why you must contact me -->
+            <div class="col-xs-12 col-sm-6">
+                <p>Porque puedo cambiar tu vu¿ide</p>
+            </div>
+
+        </div>
+        <!-- footer -->
+        <footer>
+
+        </footer>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

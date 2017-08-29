@@ -1,0 +1,99 @@
+body {
+    padding-top: 90px;
+}
+
+#portfolio {
+    background: gray;
+}
+
+#skills {
+    background: #EEEEEE;
+}
+
+#experience {
+    background: #808080
+}
+
+.nav-options {
+    float: right;
+}
+
+.container-fluid {
+    padding: 20px 30px;
+}
+
+.container-fluid {
+    background: #5CB85C;
+}
+
+.navbar.navbar-default {
+    border: 0;
+    margin-bottom: 0;
+    position: fixed;
+    /* -webkit-box-shadow: none; */
+    /* box-shadow: none; */
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    border: 1px solid #2A9253;
+}
+
+.col-xs-12 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.text-me {
+    margin-top: 77px;
+}
+
+.row {
+    padding: 40px 25px 25px 25px;
+    background: #EEEEEE;
+    align-items: center;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.col-xs-12 > p:nth-child(1) {
+    font-size: 25px;
+}
+
+.col-xs-12 > hr:nth-child(2) {
+    background: green;
+    height: 2px;
+    margin-top: 30px
+}
+
+/* #portfolio div  img {
+    width: 300px;
+} */
+
+
+/* skill bar */
+
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.skill-code {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+}
+
+.skills {
+    text-align: right; /* Right-align text */
+    padding-right: 20px; /* Add some right padding */
+    line-height: 40px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
+    color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #4CAF50;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.php {width: 60%; background-color: #808080;} /* Dark Grey */
