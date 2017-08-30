@@ -1,17 +1,55 @@
 body {
     padding-top: 90px;
+    color: white;
+    
+}
+
+.background-colors {
+    background: red;
+}
+
+#about-me {
+    background: #EEE;
 }
 
 #portfolio {
-    background: gray;
+    background: #B4B0B0;
 }
 
 #skills {
-    background: #EEEEEE;
+    background: #EEE;
 }
 
 #experience {
     background: #808080
+}
+
+#contact {
+    background: white;
+}
+
+.navbar-default .navbar-brand {
+	color: white 
+}
+
+html body div.container div#portfolio.row div.col-xs-12 h3, div#skills.row div.col-xs-12 h3, div#contact.row div.col-xs-12 h3 {
+    color: #4C4747;
+    font-size: 30px;
+    font-family: 'Mukta Mahee', sans-serif;
+
+}
+
+textarea {
+    resize: none;
+    width: 200px;
+}
+
+.send-button {
+    margin-top: 10px;
+    text-align: left;
+    position: absolute;
+    left: 30px;
+    margin-bottom: 10px;
 }
 
 .nav-options {
@@ -20,10 +58,12 @@ body {
 
 .container-fluid {
     padding: 20px 30px;
+    color: white;
 }
 
 .container-fluid {
-    background: #5CB85C;
+    background: #3D443C;
+    
 }
 
 .navbar.navbar-default {
@@ -38,7 +78,6 @@ body {
     border-radius: 50%;
     width: 350px;
     height: 350px;
-    border: 1px solid #2A9253;
 }
 
 .col-xs-12 {
@@ -51,28 +90,130 @@ body {
 }
 
 .row {
-    padding: 40px 25px 25px 25px;
-    background: #EEEEEE;
+    padding: 40px 25px 40px 25px;
     align-items: center;
 }
 
-.container {
+.navbar-style {
     padding: 0 20px;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.page {
+    margin-right: 5px;
+    text-align: center;
+}
+
+.social {
+    margin-left: 5px;
+    text-align: center;
 }
 
 .col-xs-12 > p:nth-child(1) {
     font-size: 25px;
+    
 }
 
-.col-xs-12 > hr:nth-child(2) {
-    background: green;
+.separator,hr {
+    background: #3D443C;
     height: 2px;
     margin-top: 30px
 }
 
-/* #portfolio div  img {
-    width: 300px;
-} */
+html body nav.navbar.navbar-default.navbar-fixed-top div.container-fluid div.container.navbar-style div#bs-example-navbar-collapse-1.collapse.navbar-collapse.nav-options ul.nav.navbar-nav li a.options {
+    color: white;
+    margin-left: 30px;
+}
+
+html body nav.navbar.navbar-default.navbar-fixed-top div.container-fluid div.container.navbar-style div.navbar-header a.navbar-brand {
+    color: white;
+    font-family: 'Mukta Mahee', sans-serif;
+    font-size: 25px;
+}
+
+html body nav.navbar.navbar-default.navbar-fixed-top div.container-fluid div.container.navbar-style div#bs-example-navbar-collapse-1.collapse.navbar-collapse.nav-options ul.nav.navbar-nav li a.options:hover {
+    transform: scale(1.5);
+}
+
+html body nav.navbar.navbar-default.navbar-fixed-top div.container-fluid div.container.navbar-style div#bs-example-navbar-collapse-1.collapse.navbar-collapse.nav-options ul.nav.navbar-nav li a.options:active {
+    transform: scale(1.5);
+}
+
+.activity {
+    transform: scale(1.5)
+}
+
+.footer {
+    background: #3D443C;
+    color: white;
+}
+
+div.social > div:nth-child(2) > ul:nth-child(1) > li {
+    list-style: none;
+    display: inline;
+}
+
+.w3-container > label {
+    padding-right: 475px;
+    margin-top: 10px;
+    display: none;
+}
+
+html body div.container div#contact.row div.col-xs-12.col-sm-6 form.w3-container button.send-button.btn.btn-default.btn-success {
+    background: #3D443C;
+}
+
+#invitation {
+    font-family: 'Oxygen Mono', monospace;
+    font-size: 15px;
+    opacity: .5;
+    margin-top: 40px;
+    text-align: left;
+}
+
+html body div.container div#skills.row div.col-sm-6.col-lg-6 #actually {
+    font-family: 'Oxygen Mono', monospace;
+    font-size: 15px;
+    opacity: .5;
+    margin-top: 40px;
+    text-align: left;
+}
+
+html body div.container div#skills.row div.col-sm-6.col-lg-6 div.skill-code div.skills {
+    margin-bottom: 20px;
+}
+
+.fa {
+    border-radius: 50%;
+    border-style: solid;
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+html body div.container div#about-me.row div.col-xs-12.col-md-8.col-lg-8.text-me p {
+    font-family: 'Oxygen Mono', monospace;
+    font-size: 20px;
+    opacity: .5;
+    text-align: left;
+}
+
+html body div.container div#about-me.row div.col-xs-12.col-md-8.col-lg-8.text-me {
+    text-align: center;
+}
+
+html body div.container div#contact.row div.col-xs-12.col-sm-6 form.w3-container input {
+    margin-bottom: 15px;
+}
+
+
 
 
 /* skill bar */
@@ -93,7 +234,7 @@ body {
     color: white; /* White text color */
 }
 
-.html {width: 90%; background-color: #4CAF50;} /* Green */
+.html {width: 90%; background-color: #E65100;} /* Green */
 .css {width: 80%; background-color: #2196F3;} /* Blue */
-.js {width: 65%; background-color: #f44336;} /* Red */
-.php {width: 60%; background-color: #808080;} /* Dark Grey */
+.js {width: 65%; background-color: #FDDA3E;} /* Red */
+.php {width: 60%; background-color: #3671A1;} /* Dark Grey */
