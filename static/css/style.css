@@ -234,7 +234,7 @@ html body div.container div#contact.row div.col-xs-12.col-sm-6 form.w3-container
     color: white; /* White text color */
 }
 
-.html {width: 90%; background-color: #E65100;} /* Green */
-.css {width: 80%; background-color: #2196F3;} /* Blue */
-.js {width: 65%; background-color: #FDDA3E;} /* Red */
-.php {width: 60%; background-color: #3671A1;} /* Dark Grey */
+.html {width: 85%; background-color: #E65100;} /* orange */
+.css {width: 80%; background-color: #2196F3;} /* skyblue */
+.python {width: 70%; background-color: #3671A1;} /* Dark blue */
+.js {width: 65%; background-color: #FDDA3E;} /* yellow */
