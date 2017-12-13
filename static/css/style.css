@@ -78,6 +78,10 @@ textarea {
     border-radius: 50%;
     width: 350px;
     height: 350px;
+    border: 10px solid gray;
+    -webkit-box-shadow: 11px -8px 72px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px -8px 72px -8px rgba(0,0,0,0.75);
+    box-shadow: 11px -8px 72px -8px rgba(0,0,0,0.75);
 }
 
 .col-xs-12 {
@@ -123,7 +127,7 @@ textarea {
 .separator,hr {
     background: #3D443C;
     height: 2px;
-    margin-top: 30px
+    margin-top: 50px
 }
 
 html body nav.navbar.navbar-default.navbar-fixed-top div.container-fluid div.container.navbar-style div#bs-example-navbar-collapse-1.collapse.navbar-collapse.nav-options ul.nav.navbar-nav li a.options {
