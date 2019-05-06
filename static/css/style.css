@@ -1,5 +1,6 @@
 body {
-  padding-top: 90px;
+  margin: 0px;
+  /* padding-top: 90px; */
   color: rgb(253, 255, 194);
 }
 .header {
@@ -59,6 +60,7 @@ h1 {
   color: black;
   margin: 0;
 }
+
 .hero img {
   width: auto;
   height: 95%;
@@ -66,7 +68,11 @@ h1 {
   border: 5px solid grey;
   box-shadow: 11px -8px 72px -8px rgba(0, 0, 0, 0.75);
 }
-.education {
+.education,
+.experience,
+.languages,
+.skills,
+.contact {
   margin: 20px;
   border-radius: 20px;
   width: inherit;
@@ -76,15 +82,39 @@ h1 {
   padding: 0px 3%;
   color: black;
 }
+.socialin {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-size: 50px 50px;
+}
+.social.twitter {
+  background: url('../static/img/twitter.svg');
+}
+.social.facebook {
+  background: url('../static/img/facebook.svg');
+}
+.social.github {
+  background: url('../static/img/github.svg');
+}
+.social.instagram {
+  background: url('../static/img/instagram.svg');
+}
+.social.linkedin {
+  background: url('../static/img/linkedin-sign.svg');
+}
 .item {
   margin: 20px;
   display: grid;
-  grid-template: 20% 1fr 1fr/ 15% 60% 20%;
+  grid-column-gap: 10px;
+  grid-template: 20% 1fr 1fr/ 15% 60% 1fr;
   grid-template-areas: 'durat eduschool logo' '. descrip logo' '. descrip logo';
   border-radius: 5px;
 }
 .durat {
   grid-area: durat;
+  text-align: center;
 }
 .eduschool {
   grid-area: eduschool;
@@ -92,16 +122,40 @@ h1 {
 .edutitle {
   grid-area: edutitle;
 }
-.logo {
+.logo,
+.logoD {
   grid-area: logo;
   display: block;
   justify-self: center;
+  align-self: center;
+  object-fit: fill;
   height: minmax(200px, 300px);
   width: minmax(300px, 350px);
 }
 .any img {
   width: 100%;
+  object-fit: fill;
+  align-items: center;
 }
 .descrip {
   grid-area: descrip;
+}
+.logoD a img {
+  background: #1b2127;
+  padding: 5px;
+  grid-area: logo;
+  display: block;
+  justify-self: center;
+  align-self: center;
+  object-fit: fill;
+  height: minmax(200px, 300px);
+  width: minmax(300px, 350px);
+}
+.contact {
+  background-color: #056fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
