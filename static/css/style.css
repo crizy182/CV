@@ -71,8 +71,7 @@ h1 {
 .education,
 .experience,
 .languages,
-.skills,
-.contact {
+.skills {
   margin: 20px;
   border-radius: 20px;
   width: inherit;
@@ -82,27 +81,30 @@ h1 {
   padding: 0px 3%;
   color: black;
 }
-.socialin {
+.social {
+  justify-self: left;
+}
+.social-link {
   display: inline-block;
   width: 50px;
   height: 50px;
-  margin: 0 10px;
   background-size: 50px 50px;
 }
-.social.twitter {
-  background: url('../static/img/twitter.svg');
+.social-link.twitter {
+  background-image: url('../img/twitter.svg');
+  background-size: 50px 50px;
 }
-.social.facebook {
-  background: url('../static/img/facebook.svg');
+.social-link.facebook {
+  background-image: url('../img/facebook.svg');
 }
-.social.github {
-  background: url('../static/img/github.svg');
+.social-link.github {
+  background-image: url('../img/github.svg');
 }
-.social.instagram {
-  background: url('../static/img/instagram.svg');
+.social-link.instagram {
+  background-image: url('../img/instagram.svg');
 }
-.social.linkedin {
-  background: url('../static/img/linkedin-sign.svg');
+.social-link.linkedin {
+  background-image: url('../img/linkedin-sign.svg');
 }
 .item {
   margin: 20px;
@@ -158,4 +160,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+#contacteiner {
+  justify-items: left;
 }
