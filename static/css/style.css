@@ -1,3 +1,33 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('icons/fonts/icomoon.eot?cg2q3b');
+  src:  url('icons/fonts/icomoon.eot?cg2q3b#iefix') format('embedded-opentype'),
+    url('icons/fonts/icomoon.ttf?cg2q3b') format('truetype'),
+    url('icons/fonts/icomoon.woff?cg2q3b') format('woff'),
+    url('icons/fonts/icomoon.svg?cg2q3b#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+
 body {
   margin: 0px;
   /* padding-top: 90px; */
@@ -194,17 +224,52 @@ h1 {
     }
     
   } 
+  .burger-button {
+    width: 45px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    right: 30px;
+    top: 5px;
+    color: #fff;
+  }
   
   @media screen and (max-width: 769px){
+    .burger-button {
+      display: block;
+    }
+    .menu{
+      position: fixed;
+      background: rgba(5, 111, 255, 0.9);
+      z-index:3;
+      top: 0;
+      left: -100vw;
+      width: 100vw;
+      bottom:0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: .3s;
+    }
+    .menu.is-active{
+      left: 0;
+    }
     img.logo-img {
       height: auto;
       width: 100px;
     }
     h3.durat{
-      font-size: .7em;
+      font-size: .6em;
       align-self: center;
     }
     .item{
+      grid-gap: 0px;
+      grid-template: 1fr 1fr 1fr / 10% 60% 20% ;
       grid-template-areas: 'durat eduschool logo' 'durat descrip logo' '. descrip logo';
     }
 
@@ -224,7 +289,7 @@ h1 {
         font-size: 15px;
       }
       h3{
-        font-size: 5px;
+        font-size: 3px;
       }
       .hero img{
         height: 140px;
@@ -237,7 +302,7 @@ h1 {
         grid-gap: 1px;
       }
       h3.durat{
-        font-size: .5em;
+        font-size: 2px;
         align-self: center;
       }
      
@@ -266,4 +331,4 @@ h1 {
       }
      
     }
-  
+   

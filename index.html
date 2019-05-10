@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <i class="icon-menu burger-button" id="burger-menu"></i>
   <header class="header">
     <div class="container">
       <figure class="logo">
@@ -198,6 +199,27 @@
     </div>
 
   </section>
+  <script>
+    const menu = document.querySelector('.menu');
+    const burgerButton = document.querySelector('#burger-menu');
+    function showHide() {
+      if (menu.classList.contains('is-active')) {
+        menu.classList.remove('is-active');
+      } else {
+        menu.classList.add('is-active');
+      }
+    }
+    const ipad = window.matchMedia('screen and (mas-width: 767px)');
+
+    if (ipad.matches)
+      burgerButton.addEventListener('click', hideShow);
+    ipad.addListener((event) => {
+      if (event.matches)
+        burgerButton.addEventListener('click', hideShow);
+      else
+        burgerButton.removeEventListener('click', hideShow);
+    });
+  </script>
 </body>
 
 </html>
