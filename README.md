@@ -1,2 +1,2 @@
 # My-Portfolio-
-available at:https://ronaldomata34.github.io/My-Portfolio/
+available at:https://crizy182.github.io/portfolio/
