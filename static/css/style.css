@@ -94,7 +94,9 @@ h1 {
   color: black;
   margin: 0;
   font-size: 20px;
+  text-align: justify;
 }
+h2 {}
 
 .hero img {
   height: 270px;
@@ -108,13 +110,14 @@ h1 {
 .experience,
 .languages,
 .skills {
-  margin: 20px;
+  margin: 10px;
+  border: .5px solid black;
   border-radius: 20px;
   width: inherit;
   height: auto;
   display: block;
   background-color: #eaf0ff;
-  padding: 0px 3%;
+  padding: 2px 3%;
   color: black;
 }
 .social {
@@ -143,7 +146,7 @@ h1 {
   background-image: url('../img/linkedin-sign.svg');
 }
 .item {
-  margin: 20px;
+  
   display: grid;
   grid-column-gap: 10px;
   grid-template: 20% 1fr 1fr/ 15% 60% 1fr;
@@ -209,9 +212,15 @@ h1 {
     margin: 0px;
       /* width: 1024px; */
     }
-    
+    .hero{
+      height: auto;
+    }
     .container h1{
-      flex-wrap: wrap;
+      padding: 10px;
+    }
+
+    .item{
+      margin: 0px;
     }
     
     img.logo-img {
@@ -264,12 +273,12 @@ h1 {
       width: 100px;
     }
     h3.durat{
-      font-size: .6em;
+      
       align-self: center;
     }
     .item{
-      grid-gap: 0px;
-      grid-template: 1fr 1fr 1fr / 10% 60% 20% ;
+      grid-gap: 2px;
+      grid-template: 1fr 1fr 1fr / 15% 60% 20% ;
       grid-template-areas: 'durat eduschool logo' 'durat descrip logo' '. descrip logo';
     }
 
@@ -288,8 +297,15 @@ h1 {
       h1{
         font-size: 15px;
       }
+      section h2 {
+        font-size: 7px;
+      }
+
       h3{
         font-size: 3px;
+      }
+      .eduschool strong,.company strong{
+        font-size: 7px;
       }
       .hero img{
         height: 140px;
@@ -301,8 +317,12 @@ h1 {
       .item{
         grid-gap: 1px;
       }
+      .experience .container-n .item{
+        grid-template: 1fr 1fr / 10% 60% 20%;
+      }
+
       h3.durat{
-        font-size: 2px;
+        
         align-self: center;
       }
      
@@ -314,9 +334,10 @@ h1 {
       }
       h1{
         font-size: 10px;
+        
       }
       .hero img{
-        height: 50px;
+        height: 100px;
       }
       img.logo-img {
         height: auto;
@@ -326,9 +347,55 @@ h1 {
         grid-gap: 5%;
       }
       h3.durat{
-        font-size: .5em;
+        
         align-self: center;
       }
      
     }
-   
+    @media all and (orientation: landscape) {
+      .header{
+        margin: 0px;
+          /* width: 1024px; */
+        }
+        .hero{
+          height: auto;
+        }
+        .container h1{
+          padding: 10px;
+        }
+    
+        .item{
+          margin: 0px;
+        }
+        .hero img{
+          height: 60%;
+        }
+        
+        img.logo-img {
+          height: auto;
+          width: 70px;
+        }
+        
+        .item h3{
+          font-size: 10px;
+        }
+        h3 .durat {
+          font-size: 5px;
+        }
+        
+      } 
+      .burger-button {
+        width: 45px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        line-height: 40px;
+        text-align: center;
+        position: fixed;
+        z-index: 4;
+        right: 30px;
+        top: 5px;
+        color: #fff;
+      }
+    
