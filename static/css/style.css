@@ -49,6 +49,7 @@ body {
   width: 90%;
   margin: 0 auto;
   justify-content: inherit;
+  justify-items: inherit;
   align-items: inherit;
   height: inherit;
   flex-wrap: inherit;
@@ -85,10 +86,15 @@ header ol li {
   background-color: #eaf0ff;
   align-items: center;
   justify-content: space-between;
+  justify-items: center;
   /* padding: 0px 3%; */
 }
-h1 {
-  width: 60%;
+.hero .container{
+  /* width: 50%; */
+  justify-content: center;
+}
+h1 , p {
+  width: 90%;
   line-height: 1.5;
   letter-spacing: -0.2px;
   color: black;
@@ -97,13 +103,18 @@ h1 {
   text-align: justify;
 }
 h2 {}
-
-.hero img {
+#container-resume{
+  width:60%;
+}
+#container-avatar{
+  width: 40%;
+}
+.avatar {
   height: 270px;
+  width: auto;
   border-radius: 50%;
   border: 5px solid grey;
   box-shadow: 11px -8px 72px -8px rgba(0, 0, 0, 0.75);
-  position: absolute;
   right: 30px;
 }
 .education,
@@ -119,6 +130,7 @@ h2 {}
   background-color: #eaf0ff;
   padding: 2px 3%;
   color: black;
+  box-shadow: 7.5px 12px 2px -4px rgba(0, 0, 0, 0.75);
 }
 .social {
   justify-self: left;
@@ -153,6 +165,12 @@ h2 {}
   grid-template-areas: 'durat eduschool logo' '. descrip logo' '. descrip logo';
   border-radius: 5px;
 }
+a{
+  width: inherit;
+}
+figure{
+  width: 13vw;
+}
 .durat {
   grid-area: durat;
   text-align: center;
@@ -166,12 +184,9 @@ h2 {}
 .logo,
 .logoD {
   grid-area: logo;
-  display: block;
   justify-self: center;
   align-self: center;
-  object-fit: fill;
-  height: minmax(200px, 300px);
-  width: minmax(300px, 350px);
+  width: inherit;
 }
 .any img {
   width: 100%;
@@ -202,14 +217,19 @@ h2 {}
 }
 #contacteiner {
   justify-items: left;
+  height: auto;
 }
 
 
 
 
 @media screen and (max-width: 1025px){
+  h1, p{
+    font-size: 2vw;
+  }
   .header{
     margin: 0px;
+    height: 50px;
       /* width: 1024px; */
     }
     .hero{
@@ -225,11 +245,11 @@ h2 {}
     
     img.logo-img {
       height: auto;
-      width: 150px;
+      width: 11vw;
     }
     
     h3{
-      font-size: 1em;
+      font-size: 1.1vw;
     }
     
   } 
@@ -270,7 +290,7 @@ h2 {}
     }
     img.logo-img {
       height: auto;
-      width: 100px;
+      width: 11vw;
     }
     h3.durat{
       
@@ -278,7 +298,6 @@ h2 {}
     }
     .item{
       grid-gap: 2px;
-      grid-template: 1fr 1fr 1fr / 15% 60% 20% ;
       grid-template-areas: 'durat eduschool logo' 'durat descrip logo' '. descrip logo';
     }
 
@@ -288,7 +307,8 @@ h2 {}
         margin: 0;
       }
       .icon-ct{
-        width: 30px;
+        width: 80px;
+        height: 40px;
       }
       .header a{
        
@@ -301,9 +321,6 @@ h2 {}
         font-size: 7px;
       }
 
-      h3{
-        font-size: 3px;
-      }
       .eduschool strong,.company strong{
         font-size: 7px;
       }
@@ -312,7 +329,7 @@ h2 {}
       }
       img.logo-img {
         height: auto;
-        width: 60px;
+        width: 11vw;
       }
       .item{
         grid-gap: 1px;
@@ -341,7 +358,7 @@ h2 {}
       }
       img.logo-img {
         height: auto;
-        width: 20px;
+        width: 11vw;
       }
       .item{
         grid-gap: 5%;
@@ -352,7 +369,7 @@ h2 {}
       }
      
     }
-    @media all and (orientation: landscape) {
+    @media all and (max-width: 748px) and (orientation: landscape) {
       .header{
         margin: 0px;
           /* width: 1024px; */
@@ -360,7 +377,7 @@ h2 {}
         .hero{
           height: auto;
         }
-        .container h1{
+        .container h1,p{
           padding: 10px;
         }
     
@@ -368,12 +385,15 @@ h2 {}
           margin: 0px;
         }
         .hero img{
-          height: 60%;
+          height: 55vh;
+        }
+        #container-resume{
+          width: 74vw;
         }
         
         img.logo-img {
           height: auto;
-          width: 70px;
+          width: 11vw;
         }
         
         .item h3{
