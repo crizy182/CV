@@ -30,7 +30,6 @@
 
 body {
   margin: 0px;
-  /* padding-top: 90px; */
   color: rgb(253, 255, 194);
 }
 .header {
@@ -46,7 +45,7 @@ body {
 }
 .container {
   display: inherit;
-  width: 90%;
+  flex:0.98;
   margin: 0 auto;
   justify-content: inherit;
   justify-items: inherit;
@@ -133,17 +132,16 @@ h2 {}
   box-shadow: 7.5px 12px 2px -4px rgba(0, 0, 0, 0.75);
 }
 .social {
-  justify-self: left;
+  justify-self: center;
 }
 .social-link {
   display: inline-block;
-  width: 50px;
-  height: 50px;
-  background-size: 50px 50px;
+  width: 8vh;
+  height: 8vh;
+  background-size: 8vh;
 }
 .social-link.twitter {
   background-image: url('../img/twitter.svg');
-  background-size: 50px 50px;
 }
 .social-link.facebook {
   background-image: url('../img/facebook.svg');
@@ -172,6 +170,7 @@ a{
   width: inherit;
 }
 figure{
+  margin: 0px 8vw;
   width: 13vw;
 }
 .durat {
@@ -213,17 +212,30 @@ figure{
 .contact {
   background-color: #056fff;
   color: white;
-  height: 150px;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 #contacteiner {
-  justify-items: left;
+  justify-content: center;
   height: auto;
 }
 
-
+.burger-button {
+  width: 45px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 4;
+  right: 30px;
+  top: 5px;
+  color: #fff;
+}
 
 
 @media screen and (max-width: 1025px){
@@ -235,6 +247,7 @@ figure{
     height: 50px;
       /* width: 1024px; */
     }
+   
     .hero{
       height: auto;
     }
@@ -256,6 +269,7 @@ figure{
     }
     
   } 
+
   .burger-button {
     width: 45px;
     height: 40px;
@@ -266,27 +280,44 @@ figure{
     text-align: center;
     position: fixed;
     z-index: 4;
-    right: 30px;
-    top: 5px;
+    right: 5px;
+    top: 2px;
     color: #fff;
   }
   
   @media screen and (max-width: 769px){
+    .header{
+        display: block;
+        height: auto;
+    }
+    .header a{
+      font-size: 6vh;
+    }
     .burger-button {
       display: block;
     }
     .menu{
+      display: flex;
       position: fixed;
-      background: rgba(5, 111, 255, 0.9);
+      background: rgba(27, 33, 39, 0.6);
       z-index:3;
       top: 0;
       left: -100vw;
       width: 100vw;
       bottom:0;
-      display: flex;
       align-items: center;
       justify-content: center;
       transition: .3s;
+    }
+    ol{
+      display: initial;
+    }
+        header a{
+          font-size: 6vw;
+        }
+    .header ol li {
+      height: 15vh;
+     
     }
     .menu.is-active{
       left: 0;
@@ -303,6 +334,9 @@ figure{
       grid-gap: 2px;
       grid-template-areas: 'durat eduschool logo' 'durat descrip logo' '. descrip logo';
     }
+    .social{
+      width:inherit;
+    }
 
   } 
     @media screen and (max-width: 481px){
@@ -310,12 +344,9 @@ figure{
         margin: 0;
       }
       .icon-ct{
+        top: 5px
         width: 80px;
         height: 40px;
-      }
-      .header a{
-       
-        font-size: 10px;
       }
       h1{
         font-size: 15px;
@@ -348,10 +379,7 @@ figure{
      
     }
     @media screen and (max-width: 380px){
-      .header a{
-       
-        font-size: 10px;
-      }
+      .header a{}
       h1{
         font-size: 10px;
         
@@ -407,18 +435,5 @@ figure{
         }
         
       } 
-      .burger-button {
-        width: 45px;
-        height: 40px;
-        border-radius: 50%;
-        background-color: rgba(0, 0, 0, 0.5);
-        display: none;
-        line-height: 40px;
-        text-align: center;
-        position: fixed;
-        z-index: 4;
-        right: 30px;
-        top: 5px;
-        color: #fff;
-      }
+      
     
