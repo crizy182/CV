@@ -1,6 +1,7 @@
 const ipad = window.matchMedia('screen and (max-width: 769px)');
 const menu = document.querySelector('.menu');
 const burgerButton = document.querySelector('#burger-menu');
+import data from './data.json';
 
 console.log(burgerButton);
 function showHide() {
@@ -27,3 +28,5 @@ function hideShow() {
     menu.classList.add('is-active');
   }
 }
+
+
