@@ -14,6 +14,15 @@ ol,ul {
 
 p {
   text-align: justify;
+  font-size: 2vw;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-size-adjust: inherit;
+}
+
+h1 {
+  font-size: ;
 }
 
 header {
@@ -53,7 +62,7 @@ header a {
   background: #eaf0ff;
   height: 300px;
   align-items: center;
-  padding: 0px 1vw;
+  padding: 0px 3vw;
   margin-bottom: 10px;
 }
 
@@ -89,11 +98,13 @@ header a {
   justify-content: space-between;
 }
 
-.item-time{
-  padding: 1vw;
+.item-dates{
+  display: flex;
+  padding: 3vw 1vw;
+  align-items: flex-start;
 }
 
-.item-time h3{
+.item-dates h3{
   width: max-content;
   margin: 0px;
 }
@@ -109,10 +120,15 @@ header a {
 .logo{
   display: flex;
   align-content: center;
+
 }
 
 .logo a{
   align-self: center;
+}
+
+#dorney{
+  background: darkblue;
 }
 
 .item-detail-title{
@@ -127,4 +143,12 @@ header a {
 
 .item-detail-description p {
   width: 33em;
+}
+
+#experience li {
+  display: flex;
+}
+
+#experience .item-detail-description{
+  width: 70vw;
 }
