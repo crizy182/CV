@@ -13,7 +13,6 @@
 <body>
   <i class="icon-menu burger-button" id="burger-menu"></i>
   <header class="header">
-    <div class="container">
       <figure class="logo">
         <img class="icon-ct" src="static\img\ct.png" alt="pendiente personalizar logo" height="50" />
       </figure>
@@ -36,109 +35,117 @@
           </li>
         </ol>
       </nav>
-    </div>
   </header>
   <section class="hero">
-    <div class="container" id="container-resume">
+    <div class="hero-resume" id="container-resume">
       <p>Ingeniero Electricísta busco experiencia en proyectos de diseño en instalaciones eléctricas,
         o bien operación y matenimiento en generación, transmisión y distribución de energía. Además
         de los conociemiento en la carrera tengo conocimientos en ingeniería de software.
       </p>
     </div>
-    <div class="container" id="container-avatar">
-      <img class="avatar" src="static\img\cover.jpg" alt="img-profile" />
-    </div>
+    <figure class="hero-avatar">
+      <img
+        class="hero-avatar-image" 
+        src="static\img\cover.jpg" 
+      />
+    </figure>
   </section>
   
-  <section class="education" id="education">
-    
-    <h2 class="education-title">Educación</h2>
-    <div class="container-n">
-      <div class="item">
-        <h3 class="durat">01/2010-09/2018</h3>
-        <h3 class="eduschool">
-          <strong>
-            Escuela Colombiana De Ingeniería Julio Garavito, Bogotá,
-            Colombia
-          </strong>
-        </h3>
-        <h3 class="descrip"><strong>Ingeniero Electricísta</strong><br> graduado del programa de Ingeniería Eléctrica de
-          la Escuela Colombiana de Ingeniería Julio Garavito, es un profesional que posee sólidos y actualizados
-          conocimientos científicos, tecnológicos y humanísticos, un profundo sentido de la ética y una adecuada
-          comprensión de la realidad social, económica y política de su país y el mundo. Las competencias adquiridas en
-          su formación le permitirán trabajar en equipo, con una actitud innovadora y espíritu de investigación, con el
-          fin de concebir, diseñar e implantar soluciones apropiadas a problemas relacionados con el área de energía,
-          especialmente en sistemas de potencia, recursos energéticos, mercados de energía, control y automatización
-          industrial e instalaciones eléctricas.</h4>
-          <div class="logo">
-            <a href="https://www.escuelaing.edu.co">
-
-              <img class="logo-img" src="static/img/ecilogo.png" alt="logo ECI" href="https://www.escuelaing.edu.co">
-
-            </a>
-          </div>
-      </div>
-
-      <div class="item">
-        <h3 class="durat">09/2018-11/2018</h3>
-        <h3 class="eduschool">
-          <strong>
-            Alpha Aktiv, Heidelberg, Alemania
-          </strong>
-        </h3>
-        <h3 class="descrip"><strong>Curso de Aleman nivel A1</strong><br>Es capaz de comprender y utilizar expresiones
-          cotidianas de uso muy frecuente así como frases sencillas destinadas a satisfacer necesidades de tipo
-          inmediato. Puede presentarse a sí mismo y a otros, pedir y dar información personal básica sobre su domicilio,
-          sus pertenencias y las personas que conoce. Puede relacionarse de forma elemental siempre que su interlocutor
-          hable despacio y con claridad y esté dispuesto a cooperar.</h4>
-          <a class="logo" href="https://alpha-heidelberg.de/">
-
-
-            <img class="logo-img" src="static\img\logo_331.png" alt="logo ECI" href="https://alpha-heidelberg.de/">
-
-          </a>
-      </div>
-
-      <div class="item">
-        <h3 class="durat">09/2018-11/2018</h3>
-        <h3 class="eduschool">
-          <strong>
-            Platzi
-          </strong>
-        </h3>
-        <h3 class="descrip">
-            Curso de programación básica <br>
-            Fundamentos de Ingeniería de Software <br>
-            Curso de Introducción a PHP <br>
-            Fundamentos de Bases de Datos <br>
-            Curso de SQL y MySQL <br>
-            Curso Básico de MongoDB<br>
-            Curso de Desarrollo Web Online <br>
-            Curso de Frontend Developer <br>
-            Curso de Responsive Design <br>
-            Curso profesional de Git y GitHub <br>
-            Introducción a Terminal y Línea de Comandos <br>
-            Curso Básico de Java SE 2018 <br>
-            Curso Avanzado de Java SE <br>
-            Fundamentos de JavaScript <br>
-            Curso Profesional de JavaScript <br>
-            Curso Práctico de React JS <br>
-            Curso de React Router y Redux <br>
-            Curso de Backend con Node.js <br>
-            Curso de Server Side Render con Express <br>
-            Curso de Autenticación con Passport.js <br>
-            Curso de Integración Backend con Frontend <br>
-            Curso Práctico de Python: Creación de un CRUD <br>
-            Curso de Django <br>
-        </h3>
-          <a class="logo" href="https://platzi.com/">
-
-
-            <img class="logo-img" src="static\img\platzi.png" alt="logo ECI" href="https://www.escuelaing.edu.co">
-
-          </a>
-      </div>
-
+  <section class="container" id="education">
+    <div class="container-title">
+      <h2>Educación</h2>
+    </div>
+    <div class="items-list">
+        <ol>
+          <li>
+            <div class="item">
+                <h3 class="detail-time">01/2010-09/2018</h3>
+                <h3 class="detail-title">
+                  <strong>
+                    Escuela Colombiana De Ingeniería Julio Garavito, Bogotá,
+                    Colombia
+                  </strong>
+                </h3>
+                <h3 class="detail-description"><strong>Ingeniero Electricísta</strong><br> graduado del programa de Ingeniería Eléctrica de
+                  la Escuela Colombiana de Ingeniería Julio Garavito, es un profesional que posee sólidos y actualizados
+                  conocimientos científicos, tecnológicos y humanísticos, un profundo sentido de la ética y una adecuada
+                  comprensión de la realidad social, económica y política de su país y el mundo. Las competencias adquiridas en
+                  su formación le permitirán trabajar en equipo, con una actitud innovadora y espíritu de investigación, con el
+                  fin de concebir, diseñar e implantar soluciones apropiadas a problemas relacionados con el área de energía,
+                  especialmente en sistemas de potencia, recursos energéticos, mercados de energía, control y automatización
+                  industrial e instalaciones eléctricas.</h4>
+                  <div class="logo">
+                    <a href="https://www.escuelaing.edu.co">
+        
+                      <img class="logo-img" src="static/img/ecilogo.png" alt="logo ECI" href="https://www.escuelaing.edu.co">
+        
+                    </a>
+                  </div>
+              </div>
+          </li>
+          <li>
+              <div class="item">
+                  <h3 class="durat">09/2018-11/2018</h3>
+                  <h3 class="eduschool">
+                    <strong>
+                      Alpha Aktiv, Heidelberg, Alemania
+                    </strong>
+                  </h3>
+                  <h3 class="descrip"><strong>Curso de Aleman nivel A1</strong><br>Es capaz de comprender y utilizar expresiones
+                    cotidianas de uso muy frecuente así como frases sencillas destinadas a satisfacer necesidades de tipo
+                    inmediato. Puede presentarse a sí mismo y a otros, pedir y dar información personal básica sobre su domicilio,
+                    sus pertenencias y las personas que conoce. Puede relacionarse de forma elemental siempre que su interlocutor
+                    hable despacio y con claridad y esté dispuesto a cooperar.</h4>
+                    <a class="logo" href="https://alpha-heidelberg.de/">
+          
+          
+                      <img class="logo-img" src="static\img\logo_331.png" alt="logo ECI" href="https://alpha-heidelberg.de/">
+          
+                    </a>
+                </div>
+          </li>
+          <li>
+              <div class="item">
+                  <h3 class="durat">09/2018-11/2018</h3>
+                  <h3 class="eduschool">
+                    <strong>
+                      Platzi
+                    </strong>
+                  </h3>
+                  <h3 class="descrip">
+                      Curso de programación básica <br>
+                      Fundamentos de Ingeniería de Software <br>
+                      Curso de Introducción a PHP <br>
+                      Fundamentos de Bases de Datos <br>
+                      Curso de SQL y MySQL <br>
+                      Curso Básico de MongoDB<br>
+                      Curso de Desarrollo Web Online <br>
+                      Curso de Frontend Developer <br>
+                      Curso de Responsive Design <br>
+                      Curso profesional de Git y GitHub <br>
+                      Introducción a Terminal y Línea de Comandos <br>
+                      Curso Básico de Java SE 2018 <br>
+                      Curso Avanzado de Java SE <br>
+                      Fundamentos de JavaScript <br>
+                      Curso Profesional de JavaScript <br>
+                      Curso Práctico de React JS <br>
+                      Curso de React Router y Redux <br>
+                      Curso de Backend con Node.js <br>
+                      Curso de Server Side Render con Express <br>
+                      Curso de Autenticación con Passport.js <br>
+                      Curso de Integración Backend con Frontend <br>
+                      Curso Práctico de Python: Creación de un CRUD <br>
+                      Curso de Django <br>
+                  </h3>
+                    <a class="logo" href="https://platzi.com/">
+          
+          
+                      <img class="logo-img" src="static\img\platzi.png" alt="logo ECI" href="https://www.escuelaing.edu.co">
+          
+                    </a>
+          </li>     
+        </ol> 
+    </div>
   </section>
 
   <section class="experience" id="experience">
