@@ -47,18 +47,30 @@ header {
   justify-content: space-between;
   color: antiquewhite;
   align-items: center;
+  height: 12vh;
 }
 
-header ol {
+header nav {
+  height: inherit;
+}
+
+header nav ol {
   display: flex;
   height: inherit;
   align-items: center;
 }
 
+header ol li {
+  height: inherit;
+}
+
 header a {
+  display: flex;
+  height: inherit;
   color: antiquewhite;
   text-decoration: none;
   padding: 0px 1vw;
+  align-items: center;
 }
 
 .hero{
@@ -67,6 +79,7 @@ header a {
   height: 300px;
   align-items: center;
   padding: 0px 1vw;
+  margin-bottom: 10px;
 }
 
 .hero-resume{
@@ -84,4 +97,15 @@ header a {
   border-radius: 125px;
 }
 
+.container {
+  border: 1px solid #1b2127;
+  border-radius: 10px;
+}
+
+
+
+.item-logo {
+  width: 30vh;
+  height: auto;
+}
 
