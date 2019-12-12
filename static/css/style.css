@@ -100,9 +100,16 @@ header a {
 .container {
   border: 1px solid #1b2127;
   border-radius: 10px;
+  margin: 1vh 2vw;
 }
 
+.container-title{
+  margin-left: 3vw;
+}
 
+.item{
+  display: flex;
+}
 
 .item-logo {
   width: 30vh;
