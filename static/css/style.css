@@ -15,6 +15,7 @@ ol,ul {
 p {
   text-align: justify;
   font-size: 2vw;
+  padding-right: 5vw;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -64,6 +65,7 @@ header a {
   align-items: center;
   padding: 0px 3vw;
   margin-bottom: 10px;
+  justify-content: space-between;
 }
 
 .hero-resume{
@@ -128,7 +130,9 @@ header a {
 }
 
 #dorney{
-  background: darkblue;
+  background: #1b2127;
+  padding: 5px;
+  border-radius: 15px;
 }
 
 .item-detail-title{
@@ -151,4 +155,33 @@ header a {
 
 #experience .item-detail-description{
   width: 70vw;
+}
+
+.item-language {
+  display: flex;
+  align-items: center;
+}
+
+.item-language-text {
+  width: 30vw
+}
+
+.item-language-progress{
+  width: -webkit-fill-available;
+  height: fit-content;
+  background: #eaf0ff;
+  border: 1px solid #1b2127;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.item-language-progress-bar{
+  text-align: center;
+  background: #1b2127;
+  color: #eaf0ff;
+}
+
+.item-language-progress-bar h3{
+  margin: 0px;
+  padding-top: 2px;
 }
