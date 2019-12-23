@@ -248,11 +248,11 @@ header a {
 
 @media screen and (max-width: 768px) {
   .header{
-    display: flex;
+    display: block;
   }
   
   .header .avatar{
-    display: block;
+    display: flex;
   }
   
   .header ol {
