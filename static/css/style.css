@@ -4,6 +4,7 @@ i{
 body {
   margin: 0px;
   padding: 0px;
+  height: inherit;
 }
 
 ol,ul {
@@ -13,8 +14,8 @@ ol,ul {
 }
 
 p {
+  display: table-cell;
   text-align: justify;
-  font-size: 2vw;
   padding-right: 5vw;
 }
 
@@ -22,17 +23,29 @@ h1,h2,h3,h4,h5,h6 {
   font-size-adjust: inherit;
 }
 
-h1 {
-  font-size: ;
-}
 
 header {
   display: flex;
+  flex-wrap: wrap;
   background: #1b2127;
-  justify-content: space-between;
+  justify-content: space-around;
   color: antiquewhite;
   align-items: center;
-  height: 12vh;
+  height: inherit;
+}
+
+header .avatar {
+  display: none;
+}
+
+.logo {
+  justify-content: center;
+  margin: 1px;
+}
+
+.icon-ct{
+  height: 10vh;
+  width: auto;
 }
 
 header nav {
@@ -60,6 +73,7 @@ header a {
 
 .hero{
   display: flex;
+  flex-wrap: wrap;
   background: #eaf0ff;
   height: 300px;
   align-items: center;
@@ -76,7 +90,7 @@ header a {
   display: flex;
 }
 
-.hero figure img {
+.avatar-image {
   width: 250px;
   height: 250px;
   border: 5px solid #1b2127;
@@ -223,4 +237,80 @@ header a {
 
 .social-link.instagram {
   background-image: url('../img/instagram.svg');
+}
+
+@media screen and (max-width: 1024px) {
+  /* .container{
+    display: flex;
+    flex: 1;
+  } */
+}
+
+@media screen and (max-width: 768px) {
+  .header{
+    display: flex;
+  }
+  
+  .header .avatar{
+    display: block;
+  }
+  
+  .header ol {
+    display: block;
+  }
+  
+  .header ol li {
+    height: 50px;
+  }
+  
+  .header a {
+    justify-content: center;
+  }
+  
+  .header .logo {
+    display: none;
+  }
+
+  figure{
+    margin:0px;
+    justify-content: center;
+  }
+
+  .hero figure {
+    display: none;
+  }
+
+  .item-detail-description {
+    display: block;
+  }
+
+  .container li {
+    display: block;
+    border: 1px solid grey;
+    margin: 1px;
+    padding: 3px;
+    background: rgba(100, 100, 100, 0.2);
+  }
+
+  #experience li {
+    display: block;
+  }
+
+  .footer{
+    display: block;
+  }
+
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  
+}
+
+
+@media screen and (max-width: 320px) {
 }
